@@ -29,6 +29,9 @@ import wandb
 
 __all__ = ['coteachingtrain']
 
+from dynamic_selection.utils.util import wandbRunlist
+
+
 def coteachingtrain(parse, config: ConfigParser):
     # implementation for WandB
     wandb_run_name_list = wandbRunlist(config, parse)
